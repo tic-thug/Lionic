@@ -284,7 +284,7 @@
 				</h2>
 				<address class="contacts-address">
 					<ul class="contacts-list flex list-reset">
-						<li class="contacts-item flex">
+						<li class="contacts-item flex contacts-item-adress">
 							<strong class="contacts-item-caption">
 								Visit Us
 							</strong>
@@ -292,7 +292,7 @@
 								Duis autem vel eum iriure dolor in&nbsp;hendrerit in&nbsp;vulputate velit.
 							</p>
 						</li>
-						<li class="contacts-item flex">
+						<li class="contacts-item flex contacts-item-phone">
 							<strong class="contacts-item-caption">
 								Call Us
 							</strong>
@@ -303,7 +303,7 @@
 								+7 (123) 456-78-90
 							</a>
 						</li>
-						<li class="contacts-item flex">
+						<li class="contacts-item flex contacts-item-email">
 							<strong class="contacts-item-caption">
 								Email Us
 							</strong>
@@ -318,17 +318,47 @@
 				</address>
 			</div>
 		</section>
-		<section class="join-us" id="join-us">
+		<section class="join-us section-offset" id="join-us">
 			<div class="container">
-				<h2 class="section-title">Join us</h2>
-				<p class="section-descr">Take control of your paid subscriptions today!</p>
+				<h2 class="section-title join-us-title">Join us</h2>
+				<p class="section-descr join-us-descr">Take control of your paid subscriptions today!</p>
+				<form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+				<div class="form-top flex">
+					<div class="form-left flex">
+						<input class="form-input" type="text" name="name" placeholder="Name" required>
+						<input class="form-input" type="email" name="email" placeholder="E-mail" required>
+						<input class="form-input" type="tel" name="phone" placeholder="Phone" required>
+						<select class="form-select" name="country">
+							<option value="Country" disabled selected>Country</option>
+							<option value="United Kingdom">United Kingdom</option>
+							<option value="United States">United States</option>
+							<option value="France">France</option>
+							<option value="Germany">Germany</option>
+							<option value="Spain">Spain</option>
+							<option value="Estonia">Estonia</option>
+						</select>
+					</div>
+					<div class="form-right">
+						<textarea class="form-textarea" name="comment" placeholder="Comment"></textarea>
+					</div>
+				</div>
+				<div class="form-bottom flex">
+					<div class="form-wrapper flex">
+						<button class="btn btn-reset form-btn">GET STARTED</button>
+						<label class="form-check">
+							<input type="checkbox" required>
+							I agree with the <a href="#">user agreement</a>
+						</label>
+					</div>
+				</div>
+			</form>
 			</div>
 		</section>
 	</main>
 
 	<footer class="footer">
 		<div class="container footer-container flex">
-			<div class="footer-left">
+			<div class="footer-left flex">
 				<a class="footer-logo" href="#">
 					<img src="img/logo.svg" alt="Logo">
 				</a>
@@ -351,8 +381,8 @@
 						</li>
 					</ul>
 				</nav>
-				<ul class="social list-reset">
-					<li class="social-item">
+				<ul class="social flex list-reset">
+					<li class="social-item flex">
 						<a class="social-link social-link-tw" href="#"></a>
 						<a class="social-link social-link-linkedin" href="#"></a>
 						<a class="social-link social-link-mail" href="#"></a>
