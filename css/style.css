@@ -247,6 +247,10 @@ body {
 }
 
 /* articles */
+.articles {
+	border-bottom: 1px solid #dadada;
+}
+
 .articles-list {
 	flex-wrap: wrap;
 	gap: 30px;
@@ -274,7 +278,7 @@ body {
 	display: block;
 	margin-bottom: 5px;
 	font-size: 10px;
-	line-height: 1.5;
+	line-height: 150%;
 	color: #787878;
 }
 
@@ -291,11 +295,15 @@ body {
 	max-width: 210px;
 	margin: 0;
 	font-size: 14px;
-	line-height: 1.5;
+	line-height: 150%;
 	color: #787878;
 }
 
 /* clients */
+.clients {
+	border-bottom: 1px solid #dadada;
+}
+
 .clients-list {
 	flex-wrap: wrap;
 	gap: 30px;
@@ -314,7 +322,7 @@ body {
 	margin: 0;
 	margin-bottom: 30px;
 	font-size: 14px;
-	line-height: 1.8;
+	line-height: 180%;
 	color: #787878;
 }
 
@@ -323,7 +331,7 @@ body {
 	margin-top: auto;
 	padding-top: 28px;
 	align-items: center;
-	border-top: 1px solid #e4e4e4;
+	border-top: 1px solid #dadada;
 }
 
 .clietns-avatar {
@@ -343,17 +351,25 @@ body {
 	margin-bottom: 5px;
 	font-weight: 600;
 	font-size: 17px;
-	line-height: 1.8;
+	line-height: 180%;
 	color: #1c1c1c;
 }
 
 .clients-post {
 	font-size: 14px;
-	line-height: 1.8;
+	line-height: 180%;
 	color: #787878;
 }
 
 /* contacts */
+.contacts {
+	border-bottom: 1px solid #dadada;
+}
+
+.contacts-title {
+	margin-bottom: 109px;
+}
+
 .contacts-address {
 	font-style: normal;
 }
@@ -366,19 +382,139 @@ body {
 .contacts-item {
 	flex-direction: column;
 	width: 370px;
-	border: 1px solid coral;
+	padding-top: 48px;
+	background-position: left top;
+	background-size: 29px 29px;
+	background-repeat: no-repeat;
+}
+
+.contacts-item-adress {
+	background-image: url("../img/icon-location.svg");
+}
+
+.contacts-item-phone {
+	background-image: url("../img/icon-phone.svg");
+}
+
+.contacts-item-email {
+	background-image: url("../img/icon-mail.svg");
 }
 
 .contacts-item-caption {
 	margin-bottom: 30px;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 180%;
+	color: #1c1c1c;
 }
 
 .contacts-item-text {
+	max-width: 215px;
 	margin: 0;
+	font-size: 14px;
+	line-height: 180%;
+	color: #787878;
 }
 
-.contacts-item-link:not(:last-child) {
-	margin-bottom: 5px;
+.contacts-item-link {
+	font-size: 14px;
+	line-height: 180%;
+	color: #787878;
+}
+
+/* join us */
+.join-us {
+	border-bottom: 1px solid #C4C4C4;
+}
+
+.join-us-title {
+	text-align: center;
+}
+
+.join-us-descr {
+	margin-bottom: 30px;
+	font-size: 16px;
+	text-align: center;
+	color: #787878;
+}
+
+.form {
+	padding-left: 55px;
+	padding-right: 55px;
+}
+
+.form-top {
+	margin-bottom: 19px;
+	justify-content: space-between;
+}
+
+.form-left {
+	flex-wrap: wrap;
+	gap: 19px;
+	width: 49%;
+}
+
+.form-input {
+	width: 250px;
+	height: 60px;
+	padding: 16px 28px;
+	border: 1px solid #dadada;
+	border-radius: 50px;
+}
+
+.form-select {
+	width: 250px;
+	height: 60px;
+	padding: 16px 28px;
+	border: 1px solid #dadada;
+	border-radius: 50px;
+}
+
+.form-right {
+	width: 49%;
+}
+
+.form-textarea {
+	width: 100%;
+	height: 100%;
+	padding: 16px 28px;
+	resize: none;
+	border: 1px solid #dadada;
+	border-radius: 20px;
+}
+
+.form-bottom {
+	justify-content: flex-end;
+}
+
+.form-wrapper {
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-btn {
+	min-width: 230px;
+	min-height: 60px;
+	margin-bottom: 9px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 50px;
+}
+
+.form-check {
+	font-size: 12px;
+	line-height: 160%;
+	color: #787878;
+}
+
+.form-check input {
+	margin-right: 8px;
+}
+
+.form-check a {
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: #3172b9;
 }
 
 /* footer */
@@ -396,12 +532,54 @@ body {
 	align-items: center;
 }
 
+.footer-logo {
+	margin-right: 25px;
+}
+
+.footer-copy {
+	font-size: 12px;
+	line-height: 160%;
+	color: #787878;
+}
+
+.footer-nav {
+	margin-right: 56px;
+}
+
 .footer-list {
 	flex-wrap: wrap;
 	gap: 28px;
 	width: 460px;
 }
 
-.footer-logo {
-	margin-right: 25px;
+.footer-link {
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 200%;
+	color: #787878;
+}
+
+.social-link {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.social-item {
+	gap: 32px;
+}
+
+.social-link-tw {
+	background-image: url("../img/twitter-logo.svg");
+}
+
+.social-link-linkedin {
+	background-image: url("../img/linkedin-logo.svg");
+}
+
+.social-link-mail {
+	background-image: url("../img/mail-logo.svg");
 }
